@@ -33,20 +33,20 @@ const AdminDashBoard = () => {
           </button>
 
           {open && (
-            <ul className="absolute z-10 bg-white text-black shadow-lg rounded-md ml-20 mt-6 w-44">
+            <ul className="absolute z-10 bg-white text-black shadow-lg rounded-md ml-20 mt-6 w-48">
               <li>
                 <NavLink
                   to='/dashboard/allEvents'
                   className="block px-4 py-2 hover:bg-blue-500 hover:text-white mr-2 mt-2"
                 >
-                  All Events
+                  Manage Events
                 </NavLink>
               </li>
              
               <li>
                 <NavLink
                   to='/dashboard/addEvents'
-                  className="block px-4 py-2 hover:bg-blue-500 hover:text-white mr-2 mb-2"
+                  className="block px-4 py-2 hover:bg-blue-500 hover:text-white mt-2 mr-2 mb-2"
                 >
                   Add Event
                 </NavLink>
