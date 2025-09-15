@@ -1,0 +1,782 @@
+[
+  {
+    "title": "Coldplay Live in Paris",
+    "description": "Experience Coldplay's magical live performance with lights and music.",
+    "location": "Paris, France",
+    "date": "2025-10-12",
+    "time": "19:30",
+    "category": "Concert",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 250,
+        "quantity": 150
+      },
+      {
+        "type": "Regular",
+        "price": 120,
+        "quantity": 500
+      },
+      {
+        "type": "Student",
+        "price": 80,
+        "quantity": 200
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+  },
+  {
+    "title": "Tech Conference 2025",
+    "description": "Annual technology conference focusing on AI, cloud, and cybersecurity.",
+    "location": "San Francisco, USA",
+    "date": "2025-11-03",
+    "time": "09:00",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 500,
+        "quantity": 100
+      },
+      {
+        "type": "Regular",
+        "price": 250,
+        "quantity": 400
+      },
+      {
+        "type": "Student",
+        "price": 100,
+        "quantity": 150
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1551836022-4c4c79ecde16"
+  },
+  {
+    "title": "NBA Finals Game 1",
+    "description": "The first game of the NBA Finals 2025 between the top two teams.",
+    "location": "Los Angeles, USA",
+    "date": "2025-06-04",
+    "time": "20:00",
+    "category": "Sports",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 600,
+        "quantity": 200
+      },
+      {
+        "type": "Regular",
+        "price": 300,
+        "quantity": 1000
+      },
+      {
+        "type": "Student",
+        "price": 150,
+        "quantity": 400
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b"
+  },
+  {
+    "title": "Startup Pitch Night",
+    "description": "An evening where startups pitch ideas to investors and entrepreneurs.",
+    "location": "Berlin, Germany",
+    "date": "2025-09-25",
+    "time": "18:00",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 200,
+        "quantity": 80
+      },
+      {
+        "type": "Regular",
+        "price": 100,
+        "quantity": 300
+      },
+      {
+        "type": "Student",
+        "price": 50,
+        "quantity": 100
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1551836022-4c4c79ecde16"
+  },
+  {
+    "title": "UEFA Champions League Final",
+    "description": "The grand finale of European football\u2019s most prestigious tournament.",
+    "location": "London, UK",
+    "date": "2025-05-28",
+    "time": "21:00",
+    "category": "Sports",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 800,
+        "quantity": 300
+      },
+      {
+        "type": "Regular",
+        "price": 400,
+        "quantity": 2000
+      },
+      {
+        "type": "Student",
+        "price": 200,
+        "quantity": 500
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf"
+  },
+  {
+    "title": "Rock Festival 2025",
+    "description": "A three-day rock music festival featuring global artists.",
+    "location": "Austin, USA",
+    "date": "2025-08-14",
+    "time": "16:00",
+    "category": "Concert",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 400,
+        "quantity": 500
+      },
+      {
+        "type": "Regular",
+        "price": 200,
+        "quantity": 2000
+      },
+      {
+        "type": "Student",
+        "price": 100,
+        "quantity": 800
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc"
+  },
+  {
+    "title": "Sample Event 7",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Toronto, Canada",
+    "date": "2025-02-11",
+    "time": "17:00",
+    "category": "Concert",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 608,
+        "quantity": 161
+      },
+      {
+        "type": "Regular",
+        "price": 351,
+        "quantity": 916
+      },
+      {
+        "type": "Student",
+        "price": 141,
+        "quantity": 211
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+  },
+  {
+    "title": "Sample Event 8",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Toronto, Canada",
+    "date": "2025-05-27",
+    "time": "11:30",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 325,
+        "quantity": 125
+      },
+      {
+        "type": "Regular",
+        "price": 69,
+        "quantity": 809
+      },
+      {
+        "type": "Student",
+        "price": 38,
+        "quantity": 200
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+  },
+  {
+    "title": "Sample Event 9",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Toronto, Canada",
+    "date": "2025-10-04",
+    "time": "19:00",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 461,
+        "quantity": 51
+      },
+      {
+        "type": "Regular",
+        "price": 51,
+        "quantity": 890
+      },
+      {
+        "type": "Student",
+        "price": 153,
+        "quantity": 414
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1504805572947-34fad45aed93"
+  },
+  {
+    "title": "Sample Event 10",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Sydney, Australia",
+    "date": "2025-06-12",
+    "time": "10:30",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 379,
+        "quantity": 112
+      },
+      {
+        "type": "Regular",
+        "price": 400,
+        "quantity": 215
+      },
+      {
+        "type": "Student",
+        "price": 196,
+        "quantity": 207
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc"
+  },
+  {
+    "title": "Sample Event 11",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Dubai, UAE",
+    "date": "2025-11-16",
+    "time": "11:30",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 222,
+        "quantity": 244
+      },
+      {
+        "type": "Regular",
+        "price": 314,
+        "quantity": 223
+      },
+      {
+        "type": "Student",
+        "price": 126,
+        "quantity": 321
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+  },
+  {
+    "title": "Sample Event 12",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Sydney, Australia",
+    "date": "2025-11-28",
+    "time": "12:00",
+    "category": "Others",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 451,
+        "quantity": 248
+      },
+      {
+        "type": "Regular",
+        "price": 79,
+        "quantity": 732
+      },
+      {
+        "type": "Student",
+        "price": 162,
+        "quantity": 172
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe"
+  },
+  {
+    "title": "Sample Event 13",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Toronto, Canada",
+    "date": "2025-02-04",
+    "time": "14:30",
+    "category": "Others",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 639,
+        "quantity": 172
+      },
+      {
+        "type": "Regular",
+        "price": 102,
+        "quantity": 742
+      },
+      {
+        "type": "Student",
+        "price": 145,
+        "quantity": 286
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc"
+  },
+  {
+    "title": "Sample Event 14",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Sydney, Australia",
+    "date": "2025-10-11",
+    "time": "14:00",
+    "category": "Sports",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 784,
+        "quantity": 104
+      },
+      {
+        "type": "Regular",
+        "price": 286,
+        "quantity": 221
+      },
+      {
+        "type": "Student",
+        "price": 33,
+        "quantity": 248
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b"
+  },
+  {
+    "title": "Sample Event 15",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Sydney, Australia",
+    "date": "2025-05-27",
+    "time": "19:00",
+    "category": "Concert",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 481,
+        "quantity": 174
+      },
+      {
+        "type": "Regular",
+        "price": 59,
+        "quantity": 779
+      },
+      {
+        "type": "Student",
+        "price": 173,
+        "quantity": 180
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+  },
+  {
+    "title": "Sample Event 16",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Tokyo, Japan",
+    "date": "2025-08-03",
+    "time": "20:30",
+    "category": "Concert",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 654,
+        "quantity": 272
+      },
+      {
+        "type": "Regular",
+        "price": 215,
+        "quantity": 579
+      },
+      {
+        "type": "Student",
+        "price": 44,
+        "quantity": 459
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1497032628192-86f99bcd76bc"
+  },
+  {
+    "title": "Sample Event 17",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Sydney, Australia",
+    "date": "2025-05-19",
+    "time": "12:30",
+    "category": "Sports",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 780,
+        "quantity": 155
+      },
+      {
+        "type": "Regular",
+        "price": 210,
+        "quantity": 541
+      },
+      {
+        "type": "Student",
+        "price": 182,
+        "quantity": 307
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+  },
+  {
+    "title": "Sample Event 18",
+    "description": "This is a sample event description with exciting details.",
+    "location": "New York, USA",
+    "date": "2025-08-21",
+    "time": "19:30",
+    "category": "Concert",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 229,
+        "quantity": 286
+      },
+      {
+        "type": "Regular",
+        "price": 384,
+        "quantity": 575
+      },
+      {
+        "type": "Student",
+        "price": 189,
+        "quantity": 400
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf"
+  },
+  {
+    "title": "Sample Event 19",
+    "description": "This is a sample event description with exciting details.",
+    "location": "New York, USA",
+    "date": "2025-05-09",
+    "time": "20:00",
+    "category": "Sports",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 222,
+        "quantity": 94
+      },
+      {
+        "type": "Regular",
+        "price": 223,
+        "quantity": 356
+      },
+      {
+        "type": "Student",
+        "price": 60,
+        "quantity": 222
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+  },
+  {
+    "title": "Sample Event 20",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Sydney, Australia",
+    "date": "2025-03-18",
+    "time": "10:30",
+    "category": "Concert",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 383,
+        "quantity": 83
+      },
+      {
+        "type": "Regular",
+        "price": 177,
+        "quantity": 316
+      },
+      {
+        "type": "Student",
+        "price": 86,
+        "quantity": 284
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+  },
+  {
+    "title": "Sample Event 21",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Sydney, Australia",
+    "date": "2025-04-07",
+    "time": "22:30",
+    "category": "Concert",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 670,
+        "quantity": 94
+      },
+      {
+        "type": "Regular",
+        "price": 208,
+        "quantity": 573
+      },
+      {
+        "type": "Student",
+        "price": 38,
+        "quantity": 258
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+  },
+  {
+    "title": "Sample Event 22",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Toronto, Canada",
+    "date": "2025-01-09",
+    "time": "12:00",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 496,
+        "quantity": 128
+      },
+      {
+        "type": "Regular",
+        "price": 198,
+        "quantity": 507
+      },
+      {
+        "type": "Student",
+        "price": 39,
+        "quantity": 276
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1551836022-4c4c79ecde16"
+  },
+  {
+    "title": "Sample Event 23",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Tokyo, Japan",
+    "date": "2025-10-18",
+    "time": "18:00",
+    "category": "Concert",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 715,
+        "quantity": 69
+      },
+      {
+        "type": "Regular",
+        "price": 235,
+        "quantity": 615
+      },
+      {
+        "type": "Student",
+        "price": 81,
+        "quantity": 228
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1551836022-4c4c79ecde16"
+  },
+  {
+    "title": "Sample Event 24",
+    "description": "This is a sample event description with exciting details.",
+    "location": "New York, USA",
+    "date": "2025-07-02",
+    "time": "22:00",
+    "category": "Sports",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 721,
+        "quantity": 175
+      },
+      {
+        "type": "Regular",
+        "price": 195,
+        "quantity": 240
+      },
+      {
+        "type": "Student",
+        "price": 192,
+        "quantity": 328
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2"
+  },
+  {
+    "title": "Sample Event 25",
+    "description": "This is a sample event description with exciting details.",
+    "location": "New York, USA",
+    "date": "2025-09-10",
+    "time": "17:30",
+    "category": "Others",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 682,
+        "quantity": 50
+      },
+      {
+        "type": "Regular",
+        "price": 311,
+        "quantity": 565
+      },
+      {
+        "type": "Student",
+        "price": 170,
+        "quantity": 494
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30"
+  },
+  {
+    "title": "Sample Event 26",
+    "description": "This is a sample event description with exciting details.",
+    "location": "New York, USA",
+    "date": "2025-01-27",
+    "time": "20:00",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 463,
+        "quantity": 122
+      },
+      {
+        "type": "Regular",
+        "price": 312,
+        "quantity": 758
+      },
+      {
+        "type": "Student",
+        "price": 75,
+        "quantity": 443
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe"
+  },
+  {
+    "title": "Sample Event 27",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Toronto, Canada",
+    "date": "2025-12-17",
+    "time": "20:00",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 450,
+        "quantity": 264
+      },
+      {
+        "type": "Regular",
+        "price": 181,
+        "quantity": 308
+      },
+      {
+        "type": "Student",
+        "price": 80,
+        "quantity": 147
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1551836022-4c4c79ecde16"
+  },
+  {
+    "title": "Sample Event 28",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Sydney, Australia",
+    "date": "2025-12-01",
+    "time": "14:30",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 497,
+        "quantity": 69
+      },
+      {
+        "type": "Regular",
+        "price": 145,
+        "quantity": 943
+      },
+      {
+        "type": "Student",
+        "price": 63,
+        "quantity": 117
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+  },
+  {
+    "title": "Sample Event 29",
+    "description": "This is a sample event description with exciting details.",
+    "location": "Tokyo, Japan",
+    "date": "2025-01-13",
+    "time": "19:00",
+    "category": "Concert",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 402,
+        "quantity": 172
+      },
+      {
+        "type": "Regular",
+        "price": 228,
+        "quantity": 282
+      },
+      {
+        "type": "Student",
+        "price": 76,
+        "quantity": 153
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1506784983877-45594efa4cbe"
+  },
+  {
+    "title": "Sample Event 30",
+    "description": "This is a sample event description with exciting details.",
+    "location": "New York, USA",
+    "date": "2025-03-12",
+    "time": "21:00",
+    "category": "Conference",
+    "ticketTypes": [
+      {
+        "type": "VIP",
+        "price": 585,
+        "quantity": 232
+      },
+      {
+        "type": "Regular",
+        "price": 50,
+        "quantity": 369
+      },
+      {
+        "type": "Student",
+        "price": 181,
+        "quantity": 194
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1504805572947-34fad45aed93"
+  }
+]

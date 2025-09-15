@@ -22,7 +22,7 @@ const Navbar = () => {
        }
        {
         user && isAdmin&&<>
-        <li><NavLink to='/dashboard'>Admin DashBoard</NavLink></li>
+        <li><NavLink to='/dashboard/adminHome'>Admin DashBoard</NavLink></li>
        <li><NavLink to='/dashboard/allEvents'>Manage Events</NavLink></li>
        <li><NavLink to='/manageBookings'>Manage Bookings</NavLink></li>
        <li><NavLink to='/reports'>Reports</NavLink></li>
