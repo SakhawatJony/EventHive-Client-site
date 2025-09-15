@@ -9,3 +9,4 @@ const ManageBookings = () => {
 };
 
 export default ManageBookings;
+

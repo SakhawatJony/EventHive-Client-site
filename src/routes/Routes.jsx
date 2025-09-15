@@ -20,6 +20,7 @@ import AdminHome from "../dashBoardPages/AdminHome";
 import AllEvents from "../dashBoardPages/AllEvents";
 import CreateEvents from "../dashBoardPages/CreateEvents";
 import ManageUsers from "../dashBoardPages/ManageUsers";
+import UpdateEvents from "../dashBoardPages/UpdateEvents";
 
 const router = createBrowserRouter([
   {
@@ -63,10 +64,6 @@ const router = createBrowserRouter([
         element:<ManageBookings></ManageBookings>
       },
       {
-        path:'/manageEvents',
-        element:<ManageEvents></ManageEvents>
-      },
-      {
         path:'/reports',
         element:<Reports></Reports>
       }
@@ -91,6 +88,11 @@ const router = createBrowserRouter([
         path:'manageUsers',
         element:<ManageUsers></ManageUsers>,
        // loader:()=>fetch('http://localhost:5000/users')
+      },
+      {
+        path:'updateEvents/:id',
+        element:<UpdateEvents></UpdateEvents>,
+        loader:({params})=>fetch(`http://localhost:5000/events/${params.id}`)
       }
     ]
   }

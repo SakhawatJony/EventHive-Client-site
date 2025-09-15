@@ -131,7 +131,7 @@ setLoading(false)
   </div>
   <input type="file" name="image" className="file-input file-input-bordered w-full " />
 </label>
-<input type="submit" value="Add Events" className="btn btn-primary w-full col-span-2"/>
+<input type="submit" value="Add Events" className="btn text-white hover:bg-teal-800 bg-teal-500 w-full col-span-2"/>
 
           </form>
         </div>
