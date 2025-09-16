@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import useEvents from "../customHook/useEvents";
 import useAxiosPublic from "../customHook/useAxiosPublic";
 import '../App.css'
+import { Link } from "react-router-dom";
 const Events = () => {
     
   const [events] = useEvents();
@@ -28,7 +29,7 @@ setLoading(false)
     })
   },[currentPage])
   if(loading){
-        return <div className="flex justify-center mt-80"><span className="loading loading-bars loading-lg"></span></div>
+        return <div className="flex justify-center pt-72 pb-12"><span className="loading loading-bars loading-lg"></span></div>
     }
   const handlePrevPage=()=>{
     if(currentPage>0){
@@ -44,7 +45,6 @@ setLoading(false)
     setSelectedEvent(event);
     document.getElementById("my_modal").showModal();
   };
- 
   return (
     <div className="pt-32 pb-12">
       <div className="grid grid-cols-3 gap-8">
@@ -64,7 +64,8 @@ setLoading(false)
                 >
                   Show Details
                 </button>
-                <button className="btn btn-primary flex-1">Book Now</button>
+            <Link to={`/bookEvents/${event?._id}`}>    <button className="btn btn-primary flex-1"
+                  >Book Now</button></Link>
               </div>
             </div>
           </div>
@@ -92,6 +93,9 @@ setLoading(false)
           </div>
         </div>
       </dialog>
+ 
+
+      {/* Pagination Part*/}
       <div className="pagination">
         <button className="btn btn-primary" onClick={handlePrevPage}>Prev</button>
         {

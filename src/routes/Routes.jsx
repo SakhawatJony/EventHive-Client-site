@@ -21,6 +21,7 @@ import AllEvents from "../dashBoardPages/AllEvents";
 import CreateEvents from "../dashBoardPages/CreateEvents";
 import ManageUsers from "../dashBoardPages/ManageUsers";
 import UpdateEvents from "../dashBoardPages/UpdateEvents";
+import BookEvents from "../userPages/BookEvents";
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,11 @@ const router = createBrowserRouter([
         {
         path:'/profile',
         element:<PrivateRoute><Profile></Profile></PrivateRoute>
+      },
+      {
+     path:'/bookEvents/:id',
+     element:<BookEvents></BookEvents>,
+     loader:({params})=>fetch(`http://localhost:5000/events/${params.id}`)
       },
       {
         path:'/manageBookings',
