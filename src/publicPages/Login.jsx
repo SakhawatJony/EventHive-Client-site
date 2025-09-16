@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import bg from '../assets/login&register/event.jpg'
 import useAuth from '../customHook/useAuth';
 import GoogleSignIn from '../components/GoogleSignIn';
@@ -11,6 +11,7 @@ const Login = () => {
     const{signIn}=useAuth()
     const axiosPublic=useAxiosPublic()
     const navigate=useNavigate()
+    const location=useLocation()
     const handleLogin=(e)=>{
         e.preventDefault()
         const form=e.target
@@ -33,7 +34,7 @@ const Login = () => {
   showConfirmButton: false,
   timer: 2000
 });
- navigate('/')
+ navigate(location?.state?location?.state:'/')
   }else{
     Swal.fire({
   position: "center",
@@ -42,7 +43,7 @@ const Login = () => {
   showConfirmButton: false,
   timer: 2000
 });
- navigate('/')
+ navigate(location?.state?location?.state:'/')
   }
  
  })

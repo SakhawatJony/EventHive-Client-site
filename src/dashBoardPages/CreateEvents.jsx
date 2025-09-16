@@ -223,9 +223,9 @@ formData2.append("image", image);
 </label>
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white p-2 mt-4 rounded hover:bg-blue-600"
+          className="w-full bg-teal-500 text-white p-2 mt-4 rounded hover:bg-teal-700"
         >
-          Save Event
+          Add Event
         </button>
       </form>
     </div>

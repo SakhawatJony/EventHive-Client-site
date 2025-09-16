@@ -3,8 +3,9 @@ import useEvents from "../customHook/useEvents";
 import useAxiosPublic from "../customHook/useAxiosPublic";
 import '../App.css'
 import { Link } from "react-router-dom";
+import useTitle from "../customHook/useTitle";
 const Events = () => {
-    
+    useTitle('EventHive | Events')
   const [events] = useEvents();
   const[eventsPagination,setEventsPagination]=useState([])
  const [currentPage,setCurrentPage]=useState(0)
@@ -45,8 +46,10 @@ setLoading(false)
     setSelectedEvent(event);
     document.getElementById("my_modal").showModal();
   };
+
   return (
     <div className="pt-32 pb-12">
+    
       <div className="grid grid-cols-3 gap-8">
         {eventsPagination.map((event) => (
           <div key={event._id} className="card bg-base-100 w-full  shadow-xl">

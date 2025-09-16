@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGoogle } from 'react-icons/fa';
 import useAuth from '../customHook/useAuth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import useAxiosPublic from '../customHook/useAxiosPublic';
 import Swal from 'sweetalert2';
 
@@ -9,6 +9,7 @@ const GoogleSignIn = () => {
   const axiosPublic=useAxiosPublic()
     const{signInWithGoogle}=useAuth()
     const navigate=useNavigate()
+    const location=useLocation()
     const handleGoogleSignIn=()=>{
         signInWithGoogle()
           .then((result) => {
@@ -35,7 +36,7 @@ const GoogleSignIn = () => {
         showConfirmButton: false,
         timer: 2000
       });
-        navigate('/')
+        navigate(location?.state?location?.state:'/')
     }
     
    })

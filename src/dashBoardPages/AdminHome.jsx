@@ -1,5 +1,6 @@
 import { FaList, FaUsers } from "react-icons/fa";
 import useAdminStats from "../customHook/useAdminStats";
+import { FaTicket } from "react-icons/fa6";
 
 
 const AdminHome = () => {
@@ -25,7 +26,15 @@ const AdminHome = () => {
     <div className="stat-title text-3xl font-semibold">Total Events</div>
     <div className="stat-value">{stats?.events}</div>
   </div>
+   <div className="stat ">
+    <div className="stat-figure text-secondary">
+     <FaTicket className="text-5xl text-cyan-500"></FaTicket>
+    </div>
+    <div className="stat-title text-3xl font-semibold">Total Booked Ticket</div>
+    <div className="stat-value">{stats?.soldTicket}</div>
+  </div>
 </div>
+
         </div>
     );
 };

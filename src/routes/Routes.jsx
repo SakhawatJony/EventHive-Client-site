@@ -54,7 +54,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/myBookings',
-        element:<MyBookings></MyBookings>
+        element:<PrivateRoute><MyBookings></MyBookings></PrivateRoute>
       },
         {
         path:'/profile',
@@ -62,12 +62,12 @@ const router = createBrowserRouter([
       },
       {
      path:'/bookEvents/:id',
-     element:<BookEvents></BookEvents>,
+     element:<PrivateRoute><BookEvents></BookEvents></PrivateRoute>,
      loader:({params})=>fetch(`http://localhost:5000/events/${params.id}`)
       },
       {
         path:'/manageBookings',
-        element:<ManageBookings></ManageBookings>
+        element:<PrivateRoute><ManageBookings></ManageBookings></PrivateRoute>
       },
       {
         path:'/reports',

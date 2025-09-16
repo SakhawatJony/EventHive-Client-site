@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {  useLoaderData } from 'react-router-dom';
+import {  Link, useLoaderData } from 'react-router-dom';
 import useAxiosPublic from "../customHook/useAxiosPublic";
 import Swal from "sweetalert2";
 const image_hosting_key=import.meta.env.VITE_IMAGE_HOSTING_KEY
@@ -108,6 +108,7 @@ formData2.append("image", image);
     return (
          <div className="max-w-4xl mx-auto p-6 bg-white shadow border-2 rounded-lg border-black my-16 ">
       <h2 className="text-4xl font-bold mb-4 text-center">Update Event</h2>
+      <Link className='btn btn-neutral my-6' to='/dashboard/allEvents'>Back</Link>
       <form onSubmit={handleSubmit} className="space-y-">
             <label className="form-control w-full ">
   <div className="label">
