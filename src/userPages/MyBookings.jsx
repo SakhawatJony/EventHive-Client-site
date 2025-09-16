@@ -2,6 +2,7 @@ import { FaTrash } from "react-icons/fa6";
 import useMyBooking from "../customHook/useMyBooking";
 import Swal from "sweetalert2";
 import useAxiosPublic from "../customHook/useAxiosPublic";
+import { Link, NavLink } from "react-router-dom";
 
 
 const MyBookings = () => {
@@ -37,10 +38,11 @@ const totalPrice = bookedEvents.reduce((total, item) => total + item?.price, 0);
     }
     return (
         <div className="pt-32 pb-6">
-           <div className="flex justify-evenly my-6"> 
+           <button className="btn btn-accent my-6"><NavLink to='/paymentHistory'>Payment History</NavLink></button>
+           <div className="flex justify-evenly my-4"> 
             <h3 className=" text-4xl font-bold ">My Bookings : {bookedEvents.length}</h3>
             <h3 className="text-4xl font-semibold">Total Price: {totalPrice}</h3>
-            <button className="btn btn-primary">Pay</button></div>
+            {totalPrice ?<Link to='/payment'><button className="btn btn-primary">Pay</button></Link>:<button disabled className="btn btn-primary">Pay</button>}</div>
             <div className="overflow-x-auto">
   <table className="table">
     {/* head */}

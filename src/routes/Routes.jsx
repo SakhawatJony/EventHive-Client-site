@@ -22,6 +22,8 @@ import CreateEvents from "../dashBoardPages/CreateEvents";
 import ManageUsers from "../dashBoardPages/ManageUsers";
 import UpdateEvents from "../dashBoardPages/UpdateEvents";
 import BookEvents from "../userPages/BookEvents";
+import Payment from "../userPages/Payment";
+import PaymentHistory from "../userPages/PaymentHistory";
 
 const router = createBrowserRouter([
   {
@@ -72,6 +74,14 @@ const router = createBrowserRouter([
       {
         path:'/reports',
         element:<Reports></Reports>
+      },
+      {
+        path:'/payment',
+        element:<Payment></Payment>
+      },
+      {
+        path:'paymentHistory',
+        element:<PaymentHistory></PaymentHistory>
       }
     ]
   },{

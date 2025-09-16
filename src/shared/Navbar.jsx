@@ -7,7 +7,7 @@ import useMyBooking from "../customHook/useMyBooking";
 const Navbar = () => {
   const{user,logOut}=useAuth()
   const[perUser]=useUser()
-  const [bookedEvents]=useMyBooking()
+  const [bookedEvents,refetch]=useMyBooking()
   console.log('Using Tanstack : ',perUser)
   const isAdmin=perUser?.admin;
     const navLink=<>
@@ -20,6 +20,7 @@ const Navbar = () => {
         user&& !isAdmin&&<>
        <li><NavLink to='/myBookings'>My Bookings ({bookedEvents?.length})</NavLink></li>
        <li><NavLink to='/profile'>Profile</NavLink></li>
+       
         </>
        }
        {
