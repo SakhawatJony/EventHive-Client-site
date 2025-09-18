@@ -4,9 +4,11 @@ import useAuth from '../customHook/useAuth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useAxiosPublic from '../customHook/useAxiosPublic';
 import Swal from 'sweetalert2';
+import useAxiosSecure from '../customHook/useAxiosSecure';
 
 const GoogleSignIn = () => {
-  const axiosPublic=useAxiosPublic()
+ const axiosPublic=useAxiosPublic()
+  //const axiosSecure=useAxiosSecure()
     const{signInWithGoogle}=useAuth()
     const navigate=useNavigate()
     const location=useLocation()

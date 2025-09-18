@@ -106,7 +106,7 @@ navigate('/paymentHistory')
   };
 
     return (
-        <div className='pt-48 pb-12'>
+        <div className='pt-48 pb-12 mx-12 sm:mx-24'>
                 <form onSubmit={handleSubmit}>
       <CardElement
         options={{
@@ -124,7 +124,7 @@ navigate('/paymentHistory')
           },
         }}
       />
-      <button className='btn btn-primary' type="submit" disabled={!stripe}>
+      <button className='btn btn-primary mt-4' type="submit" disabled={!stripe}>
         Pay
       </button>
       <p className='text-xl text-red-500'>{error}</p>

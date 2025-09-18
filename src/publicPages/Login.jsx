@@ -3,13 +3,15 @@ import bg from '../assets/login&register/event.jpg'
 import useAuth from '../customHook/useAuth';
 import GoogleSignIn from '../components/GoogleSignIn';
 import useTitle from '../customHook/useTitle';
-import useAxiosPublic from '../customHook/useAxiosPublic';
 import Swal from 'sweetalert2';
+import useAxiosSecure from '../customHook/useAxiosSecure';
+import useAxiosPublic from '../customHook/useAxiosPublic';
 
 const Login = () => {
   useTitle('EventHive | Login')
     const{signIn}=useAuth()
     const axiosPublic=useAxiosPublic()
+   // const axiosSecure=useAxiosSecure()
     const navigate=useNavigate()
     const location=useLocation()
     const handleLogin=(e)=>{

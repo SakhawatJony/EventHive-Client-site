@@ -3,6 +3,7 @@ import { Link, NavLink, Outlet, useNavigate } from "react-router-dom";
 import useAuth from "../customHook/useAuth";
 import logo from '../assets/logo.png'
 import useTitle from "../customHook/useTitle";
+import AdminNavbar from "../shared/AdminNavbar";
 
 const AdminDashBoard = () => {
    useTitle('EventHive | DashBoard')
@@ -19,10 +20,11 @@ const AdminDashBoard = () => {
 });
     }
     return (
-        <div className="flex">
-          <div className="w-72 menu bg-teal-500 text-xl min-h-screen">
+        <div className="md:flex">
+          <AdminNavbar></AdminNavbar>
+          <div className="hidden md:block  menu bg-teal-500 text-xl min-h-screen">
            <Link to='/'> <img className="w-44 h-36"  src={logo} alt="" /></Link>
-          <nav className="text-white text-xl">
+          <nav className=" text-white text-xl  ">
             <li><NavLink to='/dashboard/adminHome'>Admin Home</NavLink></li>
                    <li className="relative">
           <button
@@ -55,13 +57,14 @@ const AdminDashBoard = () => {
           )}
         </li>
         <li><NavLink to='/dashboard/manageUsers'>Manage Users</NavLink></li>
-        <hr className="my-4" />
+        <hr className="my-4 " />
+        
         <li><NavLink to='/'>Home</NavLink></li>
           <button  className="text-white text-xl  ml-3" onClick={handleLogOut}>Logout</button>
           </nav>
         
           </div>
-          <div className="flex-1">
+          <div className="md:flex-1">
             <Outlet></Outlet>
           </div>
         </div>

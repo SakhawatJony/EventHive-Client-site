@@ -27,7 +27,7 @@ const BookEvents = () => {
           console.log(res.data)
           axiosPublic.post('/bookedEvents',vipTicketData)
           .then(res=>{
-            if(res.data.insertedId){
+            if(res.data){
                 Swal.fire({
   position: "center",
   icon: "success",
@@ -61,7 +61,7 @@ const BookEvents = () => {
           console.log(res.data)
           axiosPublic.post('/bookedEvents',regularTicketData)
           .then(res=>{
-            if(res.data.insertedId){
+            if(res.data){
                 Swal.fire({
   position: "center",
   icon: "success",
@@ -95,7 +95,8 @@ const BookEvents = () => {
           console.log(res.data)
           axiosPublic.post('/bookedEvents',studentTicketData)
           .then(res=>{
-            if(res.data.insertedId){
+            console.log('Ticket Pendamic :',res.data)
+            if(res.data){
                 Swal.fire({
   position: "center",
   icon: "success",

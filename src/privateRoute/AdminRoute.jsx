@@ -3,10 +3,10 @@ import { Navigate, useLocation } from 'react-router-dom';
 import useUser from '../customHook/useUser';
 
 const AdminRoute = ({ children }) => {
-  const [perUser, isAdminLoading] = useUser();
+  const [isAdmin, isAdminLoading] = useUser();
   const { user, loading } = useAuth();
   const location = useLocation();
-
+console.log('Admin Route :',isAdmin,isAdminLoading,loading)
   if (loading || isAdminLoading) {
     return (
       <div className="flex justify-center mt-80">
@@ -15,7 +15,7 @@ const AdminRoute = ({ children }) => {
     );
   }
 
-  if (user && perUser?.admin) {
+  if (user && isAdmin) {
     return children;
   }
 

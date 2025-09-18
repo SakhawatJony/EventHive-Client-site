@@ -39,17 +39,19 @@ const Banner = () => {
                 </div>
                  </Carousel>
               </div>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black/40 text-white max-w-6xl max-h-screen  mx-auto px-4">
-    <h1 className="text-4xl md:text-6xl font-bold drop-shadow-lg">
+                    <div className="absolute inset-0 flex flex-col items-center top-20 sm:top-20 md:justify-center text-center  text-white max-w-xl  mx-auto ">
+   <div className="bg-[#0c0c0c5d] p-4">
+     <h1 className="text-2xl sm:text-6xl font-bold drop-shadow-lg">
       🎉 Welcome to EventHive
     </h1>
-    <p className="mt-3 text-lg md:text-xl max-w-2xl">
+    <p className="mt-3 text-sm sm:text-2xl max-w-2xl">
       Discover, book, and enjoy amazing events happening around you.  
       Your one-stop hub for concerts, conferences, and celebrations!
     </p>
     <button className="mt-6 px-6 py-3 bg-pink-600 hover:bg-pink-700 rounded-xl text-white font-semibold shadow-lg">
       Explore Events
     </button>
+   </div>
   </div>
            
         </div>

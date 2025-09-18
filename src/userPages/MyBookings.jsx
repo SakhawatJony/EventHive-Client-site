@@ -8,7 +8,7 @@ import { Link, NavLink } from "react-router-dom";
 const MyBookings = () => {
     const [bookedEvents,refetch] = useMyBooking();
 const axiosPublic=useAxiosPublic()
-const totalPrice = bookedEvents.reduce((total, item) => total + item?.price, 0);
+const totalPrice = bookedEvents.reduce((total, item) => total + parseInt(item?.price), 0);
     const handleDeleteSelectedEvents=(id)=>{
         Swal.fire({
   title: "Are you sure?",
@@ -38,10 +38,10 @@ const totalPrice = bookedEvents.reduce((total, item) => total + item?.price, 0);
     }
     return (
         <div className="pt-32 pb-6">
-           <button className="btn btn-accent my-6"><NavLink to='/paymentHistory'>Payment History</NavLink></button>
-           <div className="flex justify-evenly my-4"> 
-            <h3 className=" text-4xl font-bold ">My Bookings : {bookedEvents.length}</h3>
-            <h3 className="text-4xl font-semibold">Total Price: {totalPrice}</h3>
+           <button className="btn btn-accent my-6 ml-6"><NavLink to='/paymentHistory'>Payment History</NavLink></button>
+           <div className="flex justify-evenly my-4 items-center mx-6 md:mx-12"> 
+            <h3 className="text-2xl sm:text-4xl font-bold ">My Bookings : {bookedEvents.length}</h3>
+            <h3 className="tex-2xl sm:text-4xl font-semibold">Total Price: {totalPrice}</h3>
             {totalPrice ?<Link to='/payment'><button className="btn btn-primary">Pay</button></Link>:<button disabled className="btn btn-primary">Pay</button>}</div>
             <div className="overflow-x-auto">
   <table className="table">

@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 import usePaymentHistory from "../customHook/usePaymentHistory";
 
 
 const PaymentHistory = () => {
     const[paymentHistory,refetch]=usePaymentHistory()
     return (
-        <div className="pt-32 pb-12">
+        <div className="pt-32 pb-12 mx-6">
+          <Link className="btn btn-neutral" to='/events'>Back to Events Page</Link>
            <div className="overflow-x-auto">
   <table className="table">
     {/* head */}

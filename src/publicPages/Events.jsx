@@ -48,9 +48,9 @@ setLoading(false)
   };
 
   return (
-    <div className="pt-32 pb-12">
+    <div className="pt-32 pb-12  mx-6 lg:mx-0">
     
-      <div className="grid grid-cols-3 gap-8">
+      <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-8">
         {eventsPagination.map((event) => (
           <div key={event._id} className="card bg-base-100 w-full  shadow-xl">
             <figure>

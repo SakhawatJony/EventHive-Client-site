@@ -2,9 +2,11 @@ import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndP
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
 import { GoogleAuthProvider } from "firebase/auth";
+import useAxiosPublic from "../customHook/useAxiosPublic";
 
 export const AuthContext=createContext(null)
 const AuthProvider = ({children}) => {
+    const axiosPublic=useAxiosPublic()
     const [user,setUser]=useState(null)
     const [loading,setLoading]=useState(true)
     const provider = new GoogleAuthProvider();
@@ -30,16 +32,32 @@ const AuthProvider = ({children}) => {
 })
     }
 */
-    useEffect(()=>{
-        const unsubscribe=onAuthStateChanged(auth, (currentUser) => {
-         setUser(currentUser)
-           setLoading(false)
-});
-
-        return()=>{
-            return unsubscribe()
+ useEffect(()=>{
+  const unsubscribe=onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser)
+    if(currentUser){
+      const userInfo={ email: currentUser?.email }
+      axiosPublic.post('/jwt', userInfo)
+      .then(res=>{
+        if(res.data.token){
+          localStorage.setItem('access-token', res.data.token)
         }
-    },[])
+      })
+      .catch(err=>{
+        console.error("JWT fetch failed:", err)
+      })
+      .finally(()=>{
+        setLoading(false)   // সবসময় run হবে
+      })
+    } else {
+      localStorage.removeItem('access-token')
+      setLoading(false)
+    }
+  });
+
+  return unsubscribe; // এটাই যথেষ্ট
+},[axiosPublic])
+
     const authInfo={createUser,signIn,logOut,loading,user,signInWithGoogle}
     return (
         <div>

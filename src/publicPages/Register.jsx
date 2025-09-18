@@ -7,12 +7,15 @@ import GoogleSignIn from '../components/GoogleSignIn';
 import useTitle from '../customHook/useTitle';
 import { updateProfile } from 'firebase/auth';
 import auth from '../firebase/firebase.config';
+import useAxiosSecure from '../customHook/useAxiosSecure';
 
 
 const Register = () => {
   useTitle('EventHive | Register')
+  const axiosPublic=useAxiosPublic()
+ //const axiosSecure=useAxiosSecure()
 const {createUser}=useAuth()
-const axiosPublic=useAxiosPublic()
+
 const navigate=useNavigate()
         const handleRegister=(e)=>{
         e.preventDefault()

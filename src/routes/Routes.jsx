@@ -24,6 +24,7 @@ import UpdateEvents from "../dashBoardPages/UpdateEvents";
 import BookEvents from "../userPages/BookEvents";
 import Payment from "../userPages/Payment";
 import PaymentHistory from "../userPages/PaymentHistory";
+import AdminRoute from "../privateRoute/AdminRoute";
 
 const router = createBrowserRouter([
   {
@@ -77,11 +78,11 @@ const router = createBrowserRouter([
       },
       {
         path:'/payment',
-        element:<Payment></Payment>
+        element:<PrivateRoute><Payment></Payment></PrivateRoute>
       },
       {
         path:'paymentHistory',
-        element:<PaymentHistory></PaymentHistory>
+        element:<PrivateRoute><PaymentHistory></PaymentHistory></PrivateRoute>
       }
     ]
   },{
@@ -90,24 +91,24 @@ const router = createBrowserRouter([
     children:[
       {
         path:'adminHome',
-        element:<AdminHome></AdminHome>
+        element:<AdminRoute><AdminHome></AdminHome></AdminRoute>
       },
        {
         path:'allEvents',
-        element:<AllEvents></AllEvents>
+        element:<AdminRoute><AllEvents></AllEvents></AdminRoute>
       },
        {
         path:'addEvents',
-        element:<CreateEvents></CreateEvents>
+        element:<AdminRoute><CreateEvents></CreateEvents></AdminRoute>
       },
        {
         path:'manageUsers',
-        element:<ManageUsers></ManageUsers>,
+        element:<AdminRoute><ManageUsers></ManageUsers></AdminRoute>,
        // loader:()=>fetch('http://localhost:5000/users')
       },
       {
         path:'updateEvents/:id',
-        element:<UpdateEvents></UpdateEvents>,
+        element:<AdminRoute></AdminRoute>,
         loader:({params})=>fetch(`http://localhost:5000/events/${params.id}`)
       }
     ]

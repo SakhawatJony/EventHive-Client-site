@@ -3,12 +3,14 @@ import { useLoaderData } from "react-router-dom";
 import useAxiosPublic from "../customHook/useAxiosPublic";
 import useUsers from "../customHook/useUsers";
 import Swal from "sweetalert2";
+import useAxiosSecure from "../customHook/useAxiosSecure";
 
 const ManageUsers = () => {
     const[users,refetch]=useUsers()
     console.log(users)
   //  const users=useLoaderData()
-    const axiosPublic=useAxiosPublic()
+//const axiosSecure=useAxiosSecure()
+   const axiosPublic=useAxiosPublic()
     const handleMakeAdmin=(id)=>{
         Swal.fire({
   title: "Are you sure?",
